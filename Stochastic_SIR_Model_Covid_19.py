@@ -269,7 +269,7 @@ def __(mo):
         r"""
         ### Step 2: Mean field approximations
 
-        We can build the deterministic approximants of the stochastic dynamics of infection, using the methods from the lecture.
+        We will build the deterministic approximants of the stochastic dynamics of infection.
 
         #### Option 1:
 
@@ -799,8 +799,6 @@ def __(mo):
         -  $I$ is currently infected people
         -  $R$ is recovered people
 
-        From the lecture, we had 
-
         $$\dot{S}(t) = -p\frac{S(t)I(t)}{N}$$
 
         $$\dot{I}(t) = p\frac{S(t)I(t)}{N} - \gamma I(t)$$
@@ -1027,7 +1025,7 @@ def __(mo):
         r"""
         ## Full stochastic SIR model
 
-        - Our ODE above was a mean field approximation, as derived in the lectures
+        - Our ODE above was a mean field approximation
         - Here we simulate the full stochastic solution
 
         """
