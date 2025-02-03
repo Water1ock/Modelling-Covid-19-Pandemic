@@ -941,7 +941,7 @@ def __(mo):
     mo.md(
         r"""
         !!! warning "Question"
-            1. Go through the lecture notes and make sure you understand $R_0$, and why $\dot{I}(t) < 0$ always if $R_0 < 1$. 
+            1. Make sure you understand $R_0$, and why $\dot{I}(t) < 0$ always if $R_0 < 1$. 
         
         
             2. Make a function whose input is the hyperparameters, and whose output is $R_0$. Run the function below the SIR plot, so you can see how changing the parameters changes both the $R_0$, and the dynamics of the pandemic
