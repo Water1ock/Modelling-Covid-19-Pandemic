@@ -19,17 +19,12 @@ def __(mo):
         r"""
         # Stochastic model of COVID infection excluding recovery
 
-        (from the lecture)
-
-        We're going to build the simulation that was shown in the lecture. We will keep adding to it until we get to the full SIR model.
+        We're going to build an initial simulation. We will keep adding to it until we get to the full SIR model.
 
         The goals are to
         - get better with the methodology of model building
         - reinforce understanding of differential equations
         - get exposure to different coding patterns
-
-        Since you're in a busy period, I will do most of the coding for you in this notebook. Nevertheless, carefully inspect the code: you should understand it, and add the coding patterns I use into your arsenal.
-
 
         ## The situation
         -  $N$ students in total
@@ -331,7 +326,7 @@ def __(mo):
 
         - Calculate continuous time, mean-field approximation.
 
-        In other words, assume that infections are happening constantly, rather than at midnight each day (see lecture)
+        In other words, assume that infections are happening constantly, rather than at midnight each day
         """
     )
     return
@@ -375,13 +370,11 @@ def __(mo):
 
         ### (Because there is a backward Euler too!)
 
-        - We derived the Forward Euler algorithm in the lectures. We're deriving it here again, just to make sure it's solidified in your head!
+        - We're deriving the Forward Euler algorithm, just to make sure it's solidified in your head!
 
-        - We mentioned in the lecture that approximation error on successive steps of the algorithm could compound, leading to a terrible numerical solution that looks nothing like the true solution. This becomes more likely as $\delta t$ increases. 
+        - Approximation error on successive steps of the algorithm could compound, leading to a terrible numerical solution that looks nothing like the true solution. This becomes more likely as $\delta t$ increases. 
 
-        - In this exercise, you will explore at what point the Forward Euler starts to diverge on a simple example. Play around with the code. Make sure you understand how the code works to help your coding skills.
-
-        - In the lectures, we used $\Delta t$ as a small but not infinitesimal change in $t$. Now we use $\delta t$. Get used to dealing with the same concepts in slightly different notation, it happens all the time!
+        - You can explore at what point the Forward Euler starts to diverge on a simple example. Play around with the code.
 
         ### Quick re-derivation of Forward Euler
 
